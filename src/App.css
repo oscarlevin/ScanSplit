@@ -1,0 +1,181 @@
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #666;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.upload-section {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.uploader h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.uploader p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.file-input {
+  padding: 0.5rem;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+}
+
+.info {
+  margin-top: 1rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.page-assigner {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.page-assigner h2 {
+  margin-top: 0;
+}
+
+.pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.page-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.page-header {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.page-preview {
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  background: #f0f0f0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.page-preview canvas {
+  max-height: 120px;
+  width: auto !important;
+  height: auto !important;
+}
+
+.student-selector-wrapper {
+  position: relative;
+}
+
+.student-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.student-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.student-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.student-option {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.student-option:hover,
+.student-option.highlighted {
+  background-color: #e3f2fd;
+}
+
+.student-option.selected {
+  background-color: #c8e6c9;
+  font-weight: bold;
+}
+
+.action-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.split-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.split-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.split-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.warning {
+  color: #ff9800;
+  margin-top: 1rem;
+  font-weight: bold;
+}
